@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from "styled-components"
 import SearchIcon from '@material-ui/icons/Search';
+import HomeIcon from '@material-ui/icons/Home';
+import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import HeaderOption from './HeaderOption';
 
 const Header = () => {
@@ -18,7 +20,8 @@ const Header = () => {
             </HeaderLeft>
 
             <HeaderRight>
-                <HeaderOptiopn />
+                <HeaderOption Icon={HomeIcon} title="Home"/>
+                <HeaderOption Icon={SupervisorAccountIcon} title="My Network"/>
             </HeaderRight>
         </HeaderContainer>
     )
