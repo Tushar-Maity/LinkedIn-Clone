@@ -6,6 +6,7 @@ import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import ChatIcon from '@material-ui/icons/Chat';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import HeaderOption from './HeaderOption';
 
 const Header = () => {
@@ -28,7 +29,7 @@ const Header = () => {
                 <HeaderOption Icon={BusinessCenterIcon} title="Jobs"/>
                 <HeaderOption Icon={ChatIcon} title="Messaging"/>
                 <HeaderOption Icon={NotificationsIcon} title="Notofications"/>
-                <HeaderOption avatar="https://avatars.githubusercontent.com/u/68024552?v=4" title="me"/>
+                <HeaderOption avatar={AccountCircleIcon} title="me"/>
             </HeaderRight>
         </HeaderContainer>
     )

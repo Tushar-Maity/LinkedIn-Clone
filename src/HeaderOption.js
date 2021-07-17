@@ -5,8 +5,8 @@ import styled from "styled-components"
 const HeaderOption = ({ avatar, Icon, title }) => {
     return (
         <HeaderOptionsContainer>
-            {Icon && <Icon style={{}}/>}
-            {avatar && <Avatar style={{}} src={avatar}/>}
+            {Icon && <Icon style={{objectFit: "contain", height: "25px", width: "25px"}}/>}
+            {avatar && <Avatar style={{objectFit: "contain", height: "25px", width: "25px"}} src={avatar}/>}
             <h3>{title}</h3>
         </HeaderOptionsContainer>
     )
