@@ -7,7 +7,7 @@ const Header = () => {
         <HeaderContainer>
             <h1>I am the header</h1>
             <HeaderLeft>
-                <img src="" alt="/"/>
+                <img src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" alt=""/>
                 <HeaderSearch>
                     <SearchIcon />
                     <input type="text"/>
