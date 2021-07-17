@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import SearchIcon from '@material-ui/icons/Search';
+import HeaderOption from './HeaderOption';
 
 const Header = () => {
     return (
@@ -17,7 +18,7 @@ const Header = () => {
             </HeaderLeft>
 
             <HeaderRight>
-
+                <HeaderOptiopn />
             </HeaderRight>
         </HeaderContainer>
     )
