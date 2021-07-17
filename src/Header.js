@@ -4,15 +4,18 @@ import SearchIcon from '@material-ui/icons/Search';
 
 const Header = () => {
     return (
-        <HeaderContainer>
-            <h1>I am the header</h1>
+        <HeaderContainer> 
             <HeaderLeft>
-                <img src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" alt=""/>
+                <img 
+                    src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" 
+                    alt=""
+                />
                 <HeaderSearch>
                     <SearchIcon />
                     <input type="text"/>
                 </HeaderSearch>
             </HeaderLeft>
+
             <HeaderRight>
 
             </HeaderRight>
@@ -20,11 +23,35 @@ const Header = () => {
     )
 }
 
-const HeaderContainer = styled.div``;
+const HeaderContainer = styled.div`
+    display: flex;
+`;
 
-const HeaderLeft = styled.div``;
+const HeaderLeft = styled.div`
+    display: flex;
 
-const HeaderSearch = styled.div``;
+    img {
+        object-fit: contain;
+        height: 40px;
+        margin-right: 10px;
+    }
+`;
+
+const HeaderSearch = styled.div`
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    height: 22px;
+    color: gray;
+    background-color: #eef3f8;
+
+    input {
+        outline: none;
+        border: none;
+        background: none;
+    }
+`;
 
 const HeaderRight = styled.div``;
 
