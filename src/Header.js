@@ -3,6 +3,9 @@ import styled from "styled-components"
 import SearchIcon from '@material-ui/icons/Search';
 import HomeIcon from '@material-ui/icons/Home';
 import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
+import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import ChatIcon from '@material-ui/icons/Chat';
 import HeaderOption from './HeaderOption';
 
 const Header = () => {
@@ -22,6 +25,10 @@ const Header = () => {
             <HeaderRight>
                 <HeaderOption Icon={HomeIcon} title="Home"/>
                 <HeaderOption Icon={SupervisorAccountIcon} title="My Network"/>
+                <HeaderOption Icon={BusinessCenterIcon} title="Jobs"/>
+                <HeaderOption Icon={ChatIcon} title="Messaging"/>
+                <HeaderOption Icon={NotificationsIcon} title="Notofications"/>
+                <HeaderOption avatar="https://avatars.githubusercontent.com/u/68024552?v=4" title="me"/>
             </HeaderRight>
         </HeaderContainer>
     )
@@ -30,6 +37,12 @@ const Header = () => {
 const HeaderContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
+    border-bottom: 0.1px solid lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    position: sticky;
+    z-index: 1000;
 `;
 
 const HeaderLeft = styled.div`
