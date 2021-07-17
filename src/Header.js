@@ -29,6 +29,7 @@ const Header = () => {
 
 const HeaderContainer = styled.div`
     display: flex;
+    justify-content: space-evenly;
 `;
 
 const HeaderLeft = styled.div`
@@ -57,6 +58,8 @@ const HeaderSearch = styled.div`
     }
 `;
 
-const HeaderRight = styled.div``;
+const HeaderRight = styled.div`
+    display: flex;
+`;
 
 export default Header

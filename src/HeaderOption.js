@@ -17,6 +17,10 @@ const HeaderOptionsContainer = styled.div`
     color: gray;
     margin-right: 20px;
     cursor: pointer;
+
+    &:hover {
+        color: #000;
+    }
 `;
 
 export default HeaderOption
