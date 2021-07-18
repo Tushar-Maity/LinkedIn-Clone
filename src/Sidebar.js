@@ -39,8 +39,6 @@ const Sidebar = () => {
                 {recentItem('Netflix')}
                 {recentItem('JavaScript')}
                 {recentItem('MaterialUI')}
-                {recentItem('Technologies')}
-                {recentItem('Mobile responsive')}
             </SidebarBottom>
         </SidebarContainer>
     )
@@ -122,6 +120,11 @@ const SidebarBottom = styled.div`
     background-color: #fff;
     border-radius: 10px;
     margin-top: 10px;
+
+    p {
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
 `;
 
 const SidebarRecentItem = styled.div`
@@ -141,6 +144,9 @@ const SidebarRecentItem = styled.div`
     }
 `;
 
-const SidebarHash = styled.span``;
+const SidebarHash = styled.span`
+    margin-left: 5px;
+    margin-right: 10px;
+`;
 
 export default Sidebar
