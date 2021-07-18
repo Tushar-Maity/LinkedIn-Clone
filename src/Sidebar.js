@@ -3,6 +3,14 @@ import React from 'react';
 import styled from "styled-components"
 
 const Sidebar = () => {
+
+    const recentItem = (topic) => (
+        <SidebarRecentItem>
+            <SidebarHash>#</SidebarHash>
+            <p>{topic}</p>
+        </SidebarRecentItem>
+    )
+
     return (
         <SidebarContainer>
             <SidebarTop>
@@ -26,6 +34,13 @@ const Sidebar = () => {
 
             <SidebarBottom>
                 <p>Recent</p>
+                {recentItem('ReactJS')}
+                {recentItem('NextJS')}
+                {recentItem('Netflix')}
+                {recentItem('JavaScript')}
+                {recentItem('MaterialUI')}
+                {recentItem('Technologies')}
+                {recentItem('Mobile responsive')}
             </SidebarBottom>
         </SidebarContainer>
     )
@@ -108,5 +123,24 @@ const SidebarBottom = styled.div`
     border-radius: 10px;
     margin-top: 10px;
 `;
+
+const SidebarRecentItem = styled.div`
+    display: flex;
+    font-size: 13px;
+    cursor: pointer;
+    color: gray;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    padding: 5px;
+
+    &:hover {
+        background-color: whitesmoke;
+        border-radius: 10px;
+        cursor: pointer;
+        color: black;
+    }
+`;
+
+const SidebarHash = styled.span``;
 
 export default Sidebar
