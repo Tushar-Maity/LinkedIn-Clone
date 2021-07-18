@@ -44,6 +44,7 @@ const HeaderContainer = styled.div`
     width: 100%;
     position: sticky;
     z-index: 1000;
+    background-color: #fff;
 `;
 
 const HeaderLeft = styled.div`
