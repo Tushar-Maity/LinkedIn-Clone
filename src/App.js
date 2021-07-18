@@ -2,13 +2,16 @@ import React from 'react';
 import styled from "styled-components"
 import Header from './Header';
 import Sidebar from "./Sidebar"
+import Feed from './Feed';
 
 function App() {
   return (
     <AppContainer>
       <Header />
+
       <AppBody>
         <Sidebar />
+        <Feed />
       </AppBody>
     </AppContainer>
   );
