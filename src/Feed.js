@@ -28,7 +28,9 @@ const Feed = () => {
                 </FeedInputOptions>
             </FeedInputContainer>
 
-            <Post />
+            <Post 
+                name="Tushar Maity" description="This is a test" message="It is amazing"  
+            />
             {/* Posts */}
         </FeedContainer>
     )
