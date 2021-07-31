@@ -2,7 +2,7 @@ import { Avatar } from '@material-ui/core';
 import React from 'react'
 import styled from "styled-components"
 import InputOption from './InputOption';
-import ThumbUpAltoutlinedIcon from "@material-ui/icons/ThumbUpAltoutlined"
+import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 
 const Post = (
     {name, description, message, photoUrl}
@@ -22,7 +22,7 @@ const Post = (
             </PostBody>
 
             <PostButton>
-                <InputOption Icon={ThumbUpAltoutlinedIcon} title="Like" color="gray"/>
+                <InputOption Icon={ThumbUpAltIcon} title="Like" color="gray"/>
             </PostButton>
         </PostContainer>
     )
