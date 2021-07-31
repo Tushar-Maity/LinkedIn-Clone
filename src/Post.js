@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from "styled-components"
 
-const Post = () => {
+const Post = (
+    {name, description, message, photoUrl}
+) => {
     return (
         <PostContainer>
             <h1>I am the post </h1>

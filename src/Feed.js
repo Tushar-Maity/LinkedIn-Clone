@@ -29,6 +29,7 @@ const Feed = () => {
             </FeedInputContainer>
 
             <Post />
+            {/* Posts */}
         </FeedContainer>
     )
 }
@@ -36,6 +37,8 @@ const Feed = () => {
 const FeedContainer = styled.div`
     flex: 0.6;
     margin: 0 20px;
+    /* optional width to add */
+    width: 620px;
 `;
 
 const FeedInputContainer = styled.div`
@@ -44,6 +47,7 @@ const FeedInputContainer = styled.div`
     padding-bottom: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    /* width: 450px; optional*/
 `;
 
 const FeedInput = styled.div`
