@@ -3,26 +3,33 @@ import React from 'react'
 import styled from "styled-components"
 import InputOption from './InputOption';
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
+import ChatOutlinedIcon from '@material-ui/icons/ChatOutlined';
+import ShareOutlinedIcon from '@material-ui/icons/ShareOutlined';
+import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
 
 const Post = (
     {name, description, message, photoUrl}
 ) => {
+
     return (
         <PostContainer>
             <PostHeader>
                 <Avatar />
                 <PostInfo>
-                    <h2>Tushar Maity</h2>
-                    <p>Description</p>
+                    <h2>{name}</h2>
+                    <p>{description}</p>
                 </PostInfo>
             </PostHeader>
 
             <PostBody>
-                <p>Message goes here</p>
+                <p>{message}</p>
             </PostBody>
 
             <PostButton>
                 <InputOption Icon={ThumbUpAltIcon} title="Like" color="gray"/>
+                <InputOption Icon={ChatOutlinedIcon} title="Comment" color="gray"/>
+                <InputOption Icon={ShareOutlinedIcon} title="Share" color="gray"/>
+                <InputOption Icon={SendOutlinedIcon} title="Send" color="gray"/>
             </PostButton>
         </PostContainer>
     )
@@ -57,6 +64,9 @@ const PostInfo = styled.div`
     }
 `;
 
-const PostButton = styled.div``;
+const PostButton = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+`;
 
 export default Post

@@ -8,13 +8,14 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import ChatIcon from '@material-ui/icons/Chat';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import HeaderOption from './HeaderOption';
+import Logo from './assets/linkedin.png'
 
 const Header = () => {
     return (
         <HeaderContainer> 
             <HeaderLeft>
                 <img 
-                    src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" 
+                    src={Logo}
                     alt=""
                 />
                 <HeaderSearch>
